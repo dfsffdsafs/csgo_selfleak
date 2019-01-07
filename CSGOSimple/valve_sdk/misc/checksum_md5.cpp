@@ -1,4 +1,4 @@
-// Copyright (c) 2019 TORExitNode
+
 #include "checksum_md5.hpp"
 
 #include <windows.h>

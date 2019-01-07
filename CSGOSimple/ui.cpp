@@ -1,4 +1,4 @@
-// Copyright (c) 2019 TORExitNode
+
 #include "ui.hpp"
 #include "menu_helpers.hpp"
 #include <deque>

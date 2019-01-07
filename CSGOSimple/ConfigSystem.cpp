@@ -1,4 +1,4 @@
-// Copyright (c) 2019 TORExitNode
+
 #include "ConfigSystem.h"
 #include "valve_sdk/csgostructs.hpp"
 #include <atlstr.h>

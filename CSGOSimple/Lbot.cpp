@@ -1,4 +1,4 @@
-// Copyright (c) 2019 TORExitNode
+
 #include "Lbot.h"
 #include "helpers\math.hpp"
 #include "ConfigSystem.h"

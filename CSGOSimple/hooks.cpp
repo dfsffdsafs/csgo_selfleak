@@ -1,4 +1,4 @@
-// Copyright (c) 2019 TORExitNode
+
 #include "hooks.hpp"
 #include <intrin.h>
 #include "options.hpp"

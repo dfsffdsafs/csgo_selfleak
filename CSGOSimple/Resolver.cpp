@@ -1,4 +1,4 @@
-// Copyright (c) 2019 TORExitNode
+
 #include "Resolver.h"
 #include "ConfigSystem.h"
 #include "AntiAim.h"

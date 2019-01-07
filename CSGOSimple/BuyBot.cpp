@@ -1,4 +1,4 @@
-// Copyright (c) 2019 TORExitNode
+
 #include "BuyBot.h"
 #include "ConfigSystem.h"
 #include "Logger.h"

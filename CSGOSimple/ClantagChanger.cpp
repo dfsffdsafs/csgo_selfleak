@@ -1,4 +1,4 @@
-// Copyright (c) 2019 TORExitNode
+
 #include "ClantagChanger.h"
 
 void ClantagChanger::Marquee(std::string& clantag)

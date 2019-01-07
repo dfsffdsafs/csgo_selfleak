@@ -1,4 +1,4 @@
-// Copyright (c) 2019 TORExitNode
+
 #include "Menu.h"
 #include "FontManager.h"
 #include "ConfigSystem.h"

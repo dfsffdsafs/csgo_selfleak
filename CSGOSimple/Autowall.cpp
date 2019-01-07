@@ -1,4 +1,4 @@
-// Copyright (c) 2019 TORExitNode
+
 #include "Autowall.h"
 #include "helpers/math.hpp"
 #include "options.hpp"

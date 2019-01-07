@@ -1,4 +1,4 @@
-// Copyright (c) 2019 TORExitNode
+
 #include "Logger.h"
 
 void Logger::Debug(std::string pre, std::string msg, Color clr)

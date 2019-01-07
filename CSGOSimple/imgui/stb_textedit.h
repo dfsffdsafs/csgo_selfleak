@@ -1,4 +1,4 @@
-// Copyright (c) 2019 TORExitNode
+
 
 // [ImGui] this is a slightly modified version of stb_textedit.h 1.9. Those changes would need to be pushed into nothings/stb
 // [ImGui] - fixed linestart handler when over last character of multi-line buffer + simplified existing code (#588, #815)

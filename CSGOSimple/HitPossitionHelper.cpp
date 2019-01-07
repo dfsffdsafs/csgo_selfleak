@@ -1,4 +1,4 @@
-// Copyright (c) 2019 TORExitNode
+
 #include "HitPossitionHelper.h"
 #include "RuntimeSaver.h"
 #include "Logger.h"

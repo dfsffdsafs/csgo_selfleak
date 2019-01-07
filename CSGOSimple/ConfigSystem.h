@@ -1,4 +1,4 @@
-// Copyright (c) 2019 TORExitNode
+
 #include "valve_sdk/csgostructs.hpp"
 #include <map>
 #include <string>

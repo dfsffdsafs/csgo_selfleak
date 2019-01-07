@@ -1,4 +1,4 @@
-// Copyright (c) 2019 TORExitNode
+
 #include "netvars.hpp"
 
 #include <fstream>

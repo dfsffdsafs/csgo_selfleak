@@ -1,4 +1,4 @@
-// Copyright (c) 2019 TORExitNode
+
 #include "Vector4D.hpp"
 
 #include <cmath>

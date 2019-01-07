@@ -1,4 +1,4 @@
-// Copyright (c) 2019 TORExitNode
+
 #include "Backtrack.h"
 #include "Rbot.h"
 #include "ConfigSystem.h"

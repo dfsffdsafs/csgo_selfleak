@@ -1,4 +1,4 @@
-// Copyright (c) 2019 TORExitNode
+
 #include "sdk.hpp"
 
 #include "../Helpers/Utils.hpp"

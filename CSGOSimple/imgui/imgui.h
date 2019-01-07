@@ -1,4 +1,4 @@
-// Copyright (c) 2019 TORExitNode
+
 
 // dear imgui, v1.61
 // (headers)

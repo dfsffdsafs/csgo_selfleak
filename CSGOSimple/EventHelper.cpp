@@ -1,4 +1,4 @@
-// Copyright (c) 2019 TORExitNode
+
 #include "EventHelper.h"
 #include "helpers\math.hpp"
 #include "ConfigSystem.h"

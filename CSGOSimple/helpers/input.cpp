@@ -1,4 +1,4 @@
-// Copyright (c) 2019 TORExitNode
+
 #include "input.hpp"
 
 #include "../valve_sdk/sdk.hpp"

@@ -1,4 +1,4 @@
-// Copyright (c) 2019 TORExitNode
+
 #include "ThirdpersonAngleHelper.h"
 #include "RuntimeSaver.h"
 #include "ConsoleHelper.h"

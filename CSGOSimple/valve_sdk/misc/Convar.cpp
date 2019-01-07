@@ -1,4 +1,4 @@
-// Copyright (c) 2019 TORExitNode
+
 #include "Convar.hpp"
 
 #include "../sdk.hpp"

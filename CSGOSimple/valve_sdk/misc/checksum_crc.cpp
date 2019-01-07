@@ -1,4 +1,4 @@
-// Copyright (c) 2019 TORExitNode
+
 #include "checksum_crc.hpp"
 
 #define BigShort( val )    WordSwap( val )

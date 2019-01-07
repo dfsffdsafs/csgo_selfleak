@@ -1,4 +1,4 @@
-// Copyright (c) 2019 TORExitNode
+
 #pragma warning (disable : 4514)
 
 #include "UtlBuffer.hpp"

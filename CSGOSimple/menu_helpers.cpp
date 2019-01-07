@@ -1,4 +1,4 @@
-// Copyright (c) 2019 TORExitNode
+
 #include "menu_helpers.hpp"
 #define NOMINMAX
 #include <Windows.h>

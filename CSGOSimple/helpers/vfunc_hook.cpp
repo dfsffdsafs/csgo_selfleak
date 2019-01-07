@@ -1,4 +1,4 @@
-// Copyright (c) 2019 TORExitNode
+
 #include "vfunc_hook.hpp"
 #include "../valve_sdk/misc/vfunc.hpp"
 

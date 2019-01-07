@@ -1,4 +1,4 @@
-// Copyright (c) 2019 TORExitNode
+
 
 // ImGui Win32 + DirectX9 binding
 

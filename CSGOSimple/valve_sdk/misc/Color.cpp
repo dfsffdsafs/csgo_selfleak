@@ -1,4 +1,4 @@
-// Copyright (c) 2019 TORExitNode
+
 #include "Color.hpp"
 
 Color Color::Black(0, 0, 0, 255);

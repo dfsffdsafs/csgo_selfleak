@@ -1,4 +1,4 @@
-// Copyright (c) 2019 TORExitNode
+
 #include "KeyLoop.h"
 #include "ConfigSystem.h"
 #include "helpers/input.hpp"

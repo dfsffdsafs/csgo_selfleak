@@ -1,4 +1,4 @@
-// Copyright (c) 2019 TORExitNode
+
 #include "glow.hpp"
 
 #include "../valve_sdk/csgostructs.hpp"

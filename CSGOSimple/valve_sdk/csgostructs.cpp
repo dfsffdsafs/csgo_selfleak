@@ -1,4 +1,4 @@
-// Copyright (c) 2019 TORExitNode
+
 #include "csgostructs.hpp"
 #include "../Helpers/Math.hpp"
 #include "../Helpers/Utils.hpp"

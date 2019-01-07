@@ -1,4 +1,4 @@
-// Copyright (c) 2019 TORExitNode
+
 
 //-----------------------------------------------------------------------------
 // COMPILE-TIME OPTIONS FOR DEAR IMGUI

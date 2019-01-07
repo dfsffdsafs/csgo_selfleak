@@ -1,4 +1,4 @@
-// Copyright (c) 2019 TORExitNode
+
 #include "UtlString.hpp"
 
 #define NOMINMAX

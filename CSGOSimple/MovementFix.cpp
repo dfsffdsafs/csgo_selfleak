@@ -1,4 +1,4 @@
-// Copyright (c) 2019 TORExitNode
+
 #include "MovementFix.h"
 #include "helpers/math.hpp"
 

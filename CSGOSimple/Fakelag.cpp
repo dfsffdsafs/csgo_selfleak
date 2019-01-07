@@ -1,4 +1,4 @@
-// Copyright (c) 2019 TORExitNode
+
 #include "Fakelag.h"
 #include "ConfigSystem.h"
 #include "RuntimeSaver.h"

@@ -1,4 +1,4 @@
-// Copyright (c) 2019 TORExitNode
+
 #include "EnginePrediction.h"
 #include "RuntimeSaver.h"
 #include "helpers\math.hpp"

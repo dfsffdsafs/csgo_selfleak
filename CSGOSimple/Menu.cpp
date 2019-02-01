@@ -647,12 +647,12 @@ void Menu::RenderSettings()
     if ( Components.Button ( "Create" ) && str0 != "" )
         g_Config.CreateConfig ( str0 );
 
-    if ( Components.Button ( "Save" ) )
+    if ( Components.Button ( "Save" ) && Selected != -1)
         g_Config.Save ( g_Config.Configs[Selected] );
 
     Components.SameLine();
 
-    if ( Components.Button ( "Load" ) )
+    if ( Components.Button ( "Load" ) && Selected != -1)
         g_Config.Load ( g_Config.Configs[Selected] );
 
     if ( Components.Button ( "Refresh" ) )

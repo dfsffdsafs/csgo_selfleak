@@ -466,21 +466,21 @@ namespace Hooks
 
         switch ( stage )
         {
-            case FRAME_UNDEFINED:
-                break;
+        case FRAME_UNDEFINED:
+            break;
 
-            case FRAME_START:
-                break;
+        case FRAME_START:
+            break;
 
-            case FRAME_NET_UPDATE_START:
-                break;
+        case FRAME_NET_UPDATE_START:
+            break;
 
-            case FRAME_NET_UPDATE_POSTDATAUPDATE_START:
+        case FRAME_NET_UPDATE_POSTDATAUPDATE_START:
             {
                 break;
             }
 
-            case FRAME_NET_UPDATE_POSTDATAUPDATE_END:
+        case FRAME_NET_UPDATE_POSTDATAUPDATE_END:
             {
                 if ( g_Unload )
                     return;
@@ -512,10 +512,10 @@ namespace Hooks
                 break;
             }
 
-            case FRAME_NET_UPDATE_END:
-                break;
+        case FRAME_NET_UPDATE_END:
+            break;
 
-            case FRAME_RENDER_START:
+        case FRAME_RENDER_START:
             {
                 if ( !g_Unload )
                 {
@@ -573,8 +573,8 @@ namespace Hooks
                 break;
             }
 
-            case FRAME_RENDER_END:
-                break;
+        case FRAME_RENDER_END:
+            break;
         }
 
         ofunc ( g_CHLClient, stage );
@@ -627,7 +627,6 @@ namespace Hooks
         vec3 _sim_pos = rotate_vec(m_localplayer->m_origin(), _angle, 18);
         */
         ofunc ( g_MdlRender, ctx, state, pInfo, pCustomBoneToWorld );
-        g_MdlRender->ForcedMaterialOverride ( nullptr );
     }
 
     auto dwCAM_Think = Utils::PatternScan ( GetModuleHandleW ( L"client_panorama.dll" ), "85 C0 75 30 38 86" );

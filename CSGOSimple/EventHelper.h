@@ -19,8 +19,8 @@ class EventHelper : public Singleton<EventHelper>
     public:
         void Start();
         void Stop();
-        void FireGameEvent(IGameEvent* event) override;
-        int GetEventDebugID(void) override;
+        void FireGameEvent ( IGameEvent* event ) override;
+        int GetEventDebugID ( void ) override;
     };
 public:
     void init()
@@ -31,52 +31,52 @@ public:
     {
         Listener.Stop();
     }
-    void on_fire_event(IGameEvent* event)
+    void on_fire_event ( IGameEvent* event )
     {
         //resolver::Get().OnEvent(event);
         //NewResolver::Get().OnEvent(event);
         //#include "BackTrack.h"
         //BackTrack::Get().OnEvent(event);
-        Resolver::Get().OnFireEvent(event);
-        HitPossitionHelper::Get().OnFireEvent(event);
-        Rbot::Get().OnFireEvent(event);
+        Resolver::Get().OnFireEvent ( event );
+        HitPossitionHelper::Get().OnFireEvent ( event );
+        Rbot::Get().OnFireEvent ( event );
 
-        if (!strcmp(event->GetName(), "player_hurt"))
+        if ( !strcmp ( event->GetName(), "player_hurt" ) )
         {
-            if (!g_Config.GetBool("vis_misc_hitmarker"))
-            {
+            if ( !g_Config.GetBool ( "vis_misc_hitmarker" ) )
                 return;
-            }
-            int attacker = event->GetInt("attacker");
-            if (g_EngineClient->GetPlayerForUserID(attacker) == g_EngineClient->GetLocalPlayer())
+
+            int attacker = event->GetInt ( "attacker" );
+
+            if ( g_EngineClient->GetPlayerForUserID ( attacker ) == g_EngineClient->GetLocalPlayer() )
             {
                 g_Saver.HitmarkerInfo = HitmarkerInfoStruct{ g_GlobalVars->realtime, 0.f };
-                switch (g_Config.GetInt("vis_misc_hitmarker_sound"))
-                {
-                    case 0:
-                        PlaySoundA((g_Config.AppdataFolder + "hitsound1.wav").data(), NULL, SND_ASYNC | SND_NODEFAULT | SND_NOSTOP);
-                        break;
-                    case 1:
-                        PlaySoundA((g_Config.AppdataFolder + "hitsound2.wav").data(), NULL, SND_ASYNC | SND_NODEFAULT | SND_NOSTOP);
-                        break;
-                }
+                //switch (g_Config.GetInt("vis_misc_hitmarker_sound"))
+                //{
+                //    case 0:
+                //        PlaySoundA((g_Config.AppdataFolder + "hitsound1.wav").data(), NULL, SND_ASYNC | SND_NODEFAULT | SND_NOSTOP);
+                //        break;
+                //    case 1:
+                //        PlaySoundA((g_Config.AppdataFolder + "hitsound2.wav").data(), NULL, SND_ASYNC | SND_NODEFAULT | SND_NOSTOP);
+                //        break;
+                //}
+                g_VGuiSurface->PlaySound_ ( "buttons\\arena_switch_press_02.wav" );
             }
         }
 
-        if (!strcmp(event->GetName(), "bullet_impact"))
+        if ( !strcmp ( event->GetName(), "bullet_impact" ) )
         {
-            C_BasePlayer* shooter = static_cast<C_BasePlayer*>(g_EntityList->GetClientEntity(g_EngineClient->GetPlayerForUserID(event->GetInt("userid"))));
+            C_BasePlayer* shooter = static_cast<C_BasePlayer*> ( g_EntityList->GetClientEntity ( g_EngineClient->GetPlayerForUserID ( event->GetInt ( "userid" ) ) ) );
 
-            if (!shooter || shooter != g_LocalPlayer)
-            {
+            if ( !shooter || shooter != g_LocalPlayer )
                 return;
-            }
-            Vector p = Vector(event->GetFloat("x"), event->GetFloat("y"), event->GetFloat("z"));
-            ShotTracer(g_Saver.LastShotEyePos, p);
+
+            Vector p = Vector ( event->GetFloat ( "x" ), event->GetFloat ( "y" ), event->GetFloat ( "z" ) );
+            ShotTracer ( g_Saver.LastShotEyePos, p );
         }
 
     }
-    void ShotTracer(Vector shot_pos, Vector hit_pos);
+    void ShotTracer ( Vector shot_pos, Vector hit_pos );
 private:
     listener Listener;
 };

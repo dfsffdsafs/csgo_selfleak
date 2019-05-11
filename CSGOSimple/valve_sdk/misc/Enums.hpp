@@ -101,7 +101,8 @@ enum ItemDefinitionIndex
     WEAPON_MP9,
     WEAPON_NOVA,
     WEAPON_P250,
-    WEAPON_SCAR20 = 38,
+    WEAPON_SHIELD,
+    WEAPON_SCAR20,
     WEAPON_SG556,
     WEAPON_SSG08,
     WEAPON_KNIFEGG,
@@ -131,6 +132,8 @@ enum ItemDefinitionIndex
     WEAPON_FIREBOMB,
     WEAPON_DIVERSION,
     WEAPON_FRAG_GRENADE,
+    WEAPON_SNOWBALL,
+    WEAPON_BUMPMINE,
     WEAPON_BAYONET = 500,
     WEAPON_KNIFE_FLIP = 505,
     WEAPON_KNIFE_GUT,
@@ -144,8 +147,7 @@ enum ItemDefinitionIndex
     WEAPON_KNIFE_URSUS = 519,
     WEAPON_KNIFE_GYPSY_JACKKNIFE,
     WEAPON_KNIFE_STILETTO = 522,
-    WEAPON_KNIFE_WIDOWMAKER,
-    MAX_ITEMDEF_INDEX
+    WEAPON_KNIFE_WIDOWMAKER
 };
 
 enum class ClassId : int
@@ -182,6 +184,8 @@ enum class ClassId : int
     CBreachChargeProjectile,
     CBreakableProp,
     CBreakableSurface,
+    CBumpMine,
+    CBumpMineProjectile,
     CC4,
     CCascadeLight,
     CChicken,
@@ -278,6 +282,7 @@ enum class ClassId : int
     CPhysPropWeaponUpgrade,
     CPlantedC4,
     CPlasma,
+    CPlayerPing,
     CPlayerResource,
     CPointCamera,
     CPointCommentaryNode,
@@ -305,6 +310,9 @@ enum class ClassId : int
     CSmokeGrenade,
     CSmokeGrenadeProjectile,
     CSmokeStack,
+    CSnowball,
+    CSnowballPile,
+    CSnowballProjectile,
     CSpatialEntity,
     CSpotlightEnd,
     CSprite,
@@ -409,6 +417,7 @@ enum class ClassId : int
     CWeaponSG550,
     CWeaponSG552,
     CWeaponSG556,
+    CWeaponShield,
     CWeaponSSG08,
     CWeaponTaser,
     CWeaponTec9,
@@ -516,15 +525,15 @@ enum ECSPlayerBones
 
 enum EntityFlags
 {
-    FL_ONGROUND = (1 << 0),
-    FL_DUCKING = (1 << 1),
-    FL_WATERJUMP = (1 << 2),
-    FL_ONTRAIN = (1 << 3),
-    FL_INRAIN = (1 << 4),
-    FL_FROZEN = (1 << 5),
-    FL_ATCONTROLS = (1 << 6),
-    FL_CLIENT = (1 << 7),
-    FL_FAKECLIENT = (1 << 8),
+    FL_ONGROUND = ( 1 << 0 ),
+    FL_DUCKING = ( 1 << 1 ),
+    FL_WATERJUMP = ( 1 << 2 ),
+    FL_ONTRAIN = ( 1 << 3 ),
+    FL_INRAIN = ( 1 << 4 ),
+    FL_FROZEN = ( 1 << 5 ),
+    FL_ATCONTROLS = ( 1 << 6 ),
+    FL_CLIENT = ( 1 << 7 ),
+    FL_FAKECLIENT = ( 1 << 8 ),
     MAX_ENTITYFLAGS
 };
 

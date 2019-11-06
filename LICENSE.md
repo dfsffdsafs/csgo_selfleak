@@ -1,2 +1,2 @@
 
-Copyright (C) Edgar Nentzl 2018 
+Copyright (C) 2018 
